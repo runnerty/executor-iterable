@@ -11,7 +11,7 @@ class iterableExecutor extends Execution {
     var _this = this;
     var endOptions = {};
     endOptions.execute_return = JSON.stringify(res.objects);
-    _this.end();
+    _this.end(endOptions);
   }
 }
 
