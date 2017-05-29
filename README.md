@@ -4,7 +4,7 @@
 ```json
 {
   "id": "iterable_default",
-  "type": "runnerty-executor-iterable"
+  "type": "@runnerty/executor-iterable"
 }
 ```
 
