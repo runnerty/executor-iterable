@@ -1,6 +1,6 @@
 "use strict";
 
-var Execution = global.ExecutionClass;
+const Execution = global.ExecutionClass;
 
 class iterableExecutor extends Execution {
   constructor(process) {
@@ -8,9 +8,9 @@ class iterableExecutor extends Execution {
   }
 
   exec(res) {
-    var _this = this;
-    var endOptions = {};
-    endOptions.data_ouput = res.objects;
+    let _this = this;
+    let endOptions = {};
+    endOptions.data_output = res.objects;
     _this.end(endOptions);
   }
 }
