@@ -7,7 +7,7 @@
   "main": "index.js",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/Coderty/runnerty-executor-iterable.git"
+    "url": "git+https://github.com/runnerty/executor-iterable.git"
   },
   "keywords": [
     "runnerty",
@@ -15,9 +15,9 @@
     "iterable"
   ],
   "bugs": {
-    "url": "https://github.com/Coderty/runnerty-executor-iterable/issues"
+    "url": "https://github.com/runnerty/executor-iterable/issues"
   },
-  "homepage": "https://github.com/Coderty/runnerty-executor-iterable#readme",
+  "homepage": "https://github.com/runnerty/executor-iterable#readme",
   "dependencies": {
   }
 }
