@@ -1,17 +1,17 @@
-"use strict";
+'use strict';
 
-const Execution = global.ExecutionClass;
+const Executor = require('@runnerty/module-core').Executor;
 
-class iterableExecutor extends Execution {
+class iterableExecutor extends Executor {
   constructor(process) {
     super(process);
   }
 
   exec(res) {
-    let _this = this;
-    let endOptions = {};
-    endOptions.data_output = res.objects;
-    _this.end(endOptions);
+    const endOptions = {
+      data_output: res.objects
+    };
+    this.end(endOptions);
   }
 }
 
