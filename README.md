@@ -37,6 +37,13 @@ Add in [plan.json]:
 }
 ```
 
+```json
+{
+  "id":"iterator_default",
+  "objects": "@GV(VAR_JSON_STRINGIFY)"
+}
+```
+
 
 [Runnerty]: http://www.runnerty.io
 [downloads-image]: https://img.shields.io/npm/dm/@runnerty/executor-iterable.svg
