@@ -13,8 +13,24 @@
 # Iterable executor for [Runnerty]:
 
 ### Installation:
+Through NPM
+
 ```bash
 npm i @runnerty/executor-iterable
+```
+
+You can also add modules to your project with [runnerty-cli]
+
+```bash
+npx runnerty-cli add @runnerty/executor-iterable
+```
+
+This command installs the module in your project, adds example configuration in your `config.json` and creates an example plan of use.
+
+If you have installed [runnerty-cli] globally you can include the module with this command:
+
+```bash
+rty add @runnerty/executor-iterable
 ```
 
 ### Configuration:
@@ -53,3 +69,4 @@ Add in [plan.json]:
 [david-badge-url]: https://david-dm.org/runnerty/executor-iterable
 [config.json]: http://docs.runnerty.io/config/
 [plan.json]: http://docs.runnerty.io/plan/
+[runnerty-cli]: https://www.npmjs.com/package/runnerty-cli

@@ -4,7 +4,9 @@
     {
       "id": "CHAIN_ITERABLE_SAMPLE",
       "name": "HTTP module example chain",
-      "custom_values": { "VAR_JSON_STRINGIFY": "[{'key1':'val1-1', 'key2':'val2-1'},{'key1':'val1-2', 'key2':'val2-2'}]" },
+      "custom_values": {
+        "VAR_JSON_STRINGIFY": "[{'key1':'val1-1', 'key2':'val2-1'},{'key1':'val1-2', 'key2':'val2-2'}]"
+      },
       "defaults_processes": {
         "notifications": {
           "on_start": [
