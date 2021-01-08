@@ -22,7 +22,7 @@ class iterableExecutor extends Executor {
     }
 
     this.endOptions.data_output = dataOutput;
-    this.end(endOptions);
+    this.end(this.endOptions);
   }
 }
 
