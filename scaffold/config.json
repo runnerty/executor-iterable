@@ -1,0 +1,8 @@
+{
+  "executors": [
+    {
+      "id": "iterable_default",
+      "type": "@runnerty-executor-iterable"
+    }
+  ]
+}

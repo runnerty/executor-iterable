@@ -1,0 +1,57 @@
+{
+  "$schema": "https://raw.githubusercontent.com/runnerty/schemas/master/schemas/3.0/plan.json",
+  "chains": [
+    {
+      "id": "CHAIN_ITERABLE_SAMPLE",
+      "name": "HTTP module example chain",
+      "custom_values": {
+        "VAR_JSON_STRINGIFY": "[{'key1':'val1-1', 'key2':'val2-1'},{'key1':'val1-2', 'key2':'val2-2'}]"
+      },
+      "defaults_processes": {
+        "notifications": {
+          "on_start": [
+            {
+              "id": "console_default",
+              "message": "@GETDATE('YYYY-MM-DD HH:mm:ss') START: PROCESS @GV(PROCESS_ID)"
+            }
+          ],
+          "on_fail": [
+            {
+              "id": "console_default",
+              "message": "@GETDATE('YYYY-MM-DD HH:mm:ss') ERROR: PROCESS @GV(PROCESS_ID): @GV(PROCESS_EXEC_ERR_OUTPUT)",
+              "mode": "error"
+            }
+          ],
+          "on_end": [
+            {
+              "id": "console_default",
+              "message": "@GETDATE('YYYY-MM-DD HH:mm:ss') END: PROCESS @GV(PROCESS_ID)"
+            }
+          ]
+        }
+      },
+      "processes": [
+        {
+          "id": "ITERATION_SIMPLE",
+          "name": "ITERATION SAMPLE",
+          "exec": {
+            "id": "iterator_default",
+            "objects": [
+              { "key1": "val1", "key2": "val2" },
+              { "key1": "val1_1", "key2": "val2_2" },
+              { "key1": "val1_2", "key2": "val2_3" }
+            ]
+          }
+        },
+        {
+          "id": "ITERATION_SIMPLE",
+          "name": "ITERATION SAMPLE",
+          "exec": {
+            "id": "iterator_default",
+            "objects": "@GV(VAR_JSON_STRINGIFY)"
+          }
+        }
+      ]
+    }
+  ]
+}
