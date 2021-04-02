@@ -1,0 +1,6 @@
+[
+  { "id": 1, "dog": "Moka", "email": "moka@runnerty.fake" },
+  { "id": 2, "dog": "Nela", "email": "nela@runnerty.fake" },
+  { "id": 3, "dog": "Cleo", "email": "cleo@runnerty.fake" },
+  { "id": 4, "dog": "Coco", "email": "coco@runnerty.fake" }
+]

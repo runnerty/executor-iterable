@@ -16,16 +16,32 @@
       }
     },
     "params": {
-      "type": "object",
-      "required": ["id", "objects"],
-      "properties": {
-        "id": {
-          "type": "string"
+      "anyOf": [
+        {
+          "type": "object",
+          "required": ["id", "objects"],
+          "properties": {
+            "id": {
+              "type": "string"
+            },
+            "objects": {
+              "type": ["array", "string"]
+            }
+          }
         },
-        "objects": {
-          "type": ["array", "string"]
+        {
+          "type": "object",
+          "required": ["id", "jsonFile"],
+          "properties": {
+            "id": {
+              "type": "string"
+            },
+            "jsonFile": {
+              "type": "string"
+            }
+          }
         }
-      }
+      ]
     }
   }
 }
