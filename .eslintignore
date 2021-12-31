@@ -1,10 +1,9 @@
-node_modules
-.eslintignore
-.gitignore
-.prettierignore
+.vscode
 .npmignore
-LICENSE
-*.png
-*.txt
-TODO
+api
+node_modules
+samples
+*.md
+*.json
 .DS_Store
+LICENSE
